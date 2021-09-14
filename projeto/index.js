@@ -14,7 +14,7 @@ if (consultBooksFromTheList === "Y") {
   console.table(books);
   const filterTableCategory = enterInfo
     .question(
-      "Qual categoria deseja usar como filtro? \n* Ficcção \n* Espiritita\n * Espiritualidade \n * UFOS\n Opção:"
+      "Qual categoria deseja usar como filtro? \n* Ficcao \n* Espiritita\n * Espiritualidade \n * UFOS\n Opção:"
     )
     .toLocaleUpperCase();
 

@@ -2,14 +2,14 @@
 const books = [
   {
     nome: "Realidade de Madhu",
-    categoria: "ficção",
+    categoria: "ficccao",
     paginas: 280,
     recomenda: true,
     leu: true,
   },
   {
     nome: "O Último Desejo",
-    categoria: "ficção",
+    categoria: "ficcao",
     paginas: 336,
     recomenda: false,
     leu: false,
