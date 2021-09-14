@@ -24,3 +24,14 @@ if (consultBooksFromTheList === "Y") {
   const findCategory = books.filter(category);
   console.table(findCategory);
 }
+const recommendsBooks = enterInfo
+  .question("Deseja ver só os que recomendo a leitura? (Y/N)")
+  .toLocaleUpperCase();
+
+if (recommendsBooks === "Y") {
+  function recommends(books) {
+    return books.recomenda === true;
+  }
+  const findRecommends = books.filter(recommends);
+  console.table(findRecommends);
+}
