@@ -45,4 +45,11 @@ if (wishBooks === "Y") {
   }
   const findWish = books.filter(wish);
   console.table(findWish);
+} else {
+  books.sort((a, b) => a.paginas - b.paginas);
+
+  console.log(
+    "Esses são todos os livros da lista ordenados por numeros de paginas."
+  );
+  console.table(books);
 }
