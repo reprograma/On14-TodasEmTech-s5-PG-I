@@ -1,51 +1,37 @@
 # Projeto JavaScript
 
-## Carrinho de Compras
+## Sistema dos livros
 
-Precisamos criar uma solução de um carrinho de compras.
+#### Calma! É só uma PROJETO pra chamar de seu! Já treinamos bastante com nossos exemplos na aula!
 
-- Listar no console uma tabela contendo os produtos em ordem crescente de preço (do menor ao maior). Utilize a lista contida no arquivo `database.js`
+Vamos criar um sistema que armazena informações de livros para que seja possível gerenciar:
+  - os livros que já lemos e os livros que estão na nossa listinha de desejos
 
-- Receber via terminal as entradas de `id` e `quantidade` dos produtos a serem adquiridos.
+ No arquivo database crie e exporte a sua base no formato array de objetos contendo alguns dos livros que você já leu ou gostaria de ler com os seguintes campos (Eu sou tão legal que deixei já exportado):
 
-- Perguntar se a cliente possue cupom de desconto. Caso a cliente digite 10, significa que terá 10% de desconto.
+```
+nome: string
+categoria: string
+paginas: number
+recomenda: boolean
+leu: boolean
+```
 
-- Calcular o valor do subtotal (sem considerar o desconto)
+3) No arquivo index.js desenvolva sua lógica para o comportamento abaixo: 
+  - deverá ser possível buscar livros pela categoria
+  - Me recomenda livros pra ler? 
+    Deverá listar livros que já foram lidos e que são recomendados 
+  - Minha lista de desejo:
+    Deverá listar livros que ainda não foram lidos 
 
-- Calcular o valor de desconto
+- Caso a pessoa usuária não escolha uma forma de busca, deverá mostrar todos os livros cadastrados, ordenados de forma crescente por quantidade de páginas.
 
-- Calcular o valor total (considerando o desconto do cupom)
+```
+O comportamento esperado deve ser o pedido da entrada e a impressão das tabelas buscadas, conforme instrução acima.
+```
+4) No README.md, conte sobre sua experiência e aprendizados com esse projeto.
 
-- Apresentar no console:
-  - a tabela contendo a lista de produtos adquiridos, incluindo a quantidade de cada produto
-  - o valor subtotal em Reais
-  - o valor do desconto em Reais
-  - o valor total em Reais
-  - a data da compra
-
-## Regras
-
-- Validação de produto existente pelo `id`. Caso não encontre o produto, apresentar uma mensagem de erro e solicitar novamente um `id` válido.
-
-- Validação de `quantidade` para não permitir valores negativos.
-
-- Validação de cupom de desconto. Não aceitar cupom acima de 15% de desconto.
-
-- Criação de uma classe chamada `Pedido` contendo no `constructor` pelo menos as seguintes informações:
-  - a lista de produtos
-  - o valor de cupom
-  - a data do pedido
-
-- A classe `Pedido` deve conter os métodos:
-  - que calcule a quantidade de itens totais no carrinho
-  - que calcule o valor subtotal (quantidade de itens multiplicado pelo preço unitário)
-  - que calcule o valor de desconto (subtotal multiplicado pelo desconto)
-  - que calcule o valor total (subtotal menos o desconto)
-
----
-
-npm install readline-sync
-
+5) A entrega é poderá ser feita pelo classroom, deixando o link do seu repositorio.
 ---
 
 ### Sugestões de exercícios extras para praticar um pouco mais
@@ -58,22 +44,11 @@ Essas são somente sugestões de como continuar exercitando para melhorar seu pr
 
 - Fazer o `commit` do código a cada etapa concluída.
 
-- Fazer a ordenação do mais caro para o mais barato.
-
-- Fazer a busca dos produtos por `categoria` e apresentar somente os produtos da categoria escolhida.
-
-- Fazer um cupom de desconto "BLACKFRIDAY" que só permite dar desconto em algumas categorias.
-
-- Nesse momento de exercício livre, siga sua criatividade de como incluir novas regras para seu Carrinho de compras.
-
-- Armazenar todos os pedidos e calcular o total que sua Lojinha vendeu.
-
-- etc...
-
 ---
 
 ### Exemplo de implementação
 
-<img src="./CarrinhoDeCompras.gif" />
+<img src="../Img/CarrinhoDeCompras.gif" />
 
 ---
+# Tenho certeza que vocês vão arrasar! 
