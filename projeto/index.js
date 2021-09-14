@@ -35,3 +35,14 @@ if (recommendsBooks === "Y") {
   const findRecommends = books.filter(recommends);
   console.table(findRecommends);
 }
+const wishBooks = enterInfo
+  .question("Deseja ver minha lista de desejos? (Y/N)")
+  .toLocaleUpperCase();
+
+if (wishBooks === "Y") {
+  function wish(books) {
+    return books.leu === false;
+  }
+  const findWish = books.filter(wish);
+  console.table(findWish);
+}
