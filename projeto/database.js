@@ -1,5 +1,5 @@
-module.exports = {
-  produtos: [
+//cria o array de objetos estudantes 
+const livros = [
     {
       nome: 'incluir'
     },
@@ -24,5 +24,7 @@ module.exports = {
     {
       nome: 'incluir'
     },
-  ],
-}
+]
+
+//exporta o array de objetos estudantes
+module.exports = livros
