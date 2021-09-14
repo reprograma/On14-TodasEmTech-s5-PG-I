@@ -33,6 +33,10 @@ O comportamento esperado deve ser o pedido da entrada e a impressão das tabelas
 
 <img src= "/home/darielly/Área de Trabalho/estudoDeProgramação/On14-TodasEmTech-s5-PG-I/projeto/imagens" />
 
+<<<<<<< HEAD
 ---
 
 ```
+=======
+
+>>>>>>> 976d562ee60a947ef6425ee94184175882e517df
