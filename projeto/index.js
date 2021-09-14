@@ -18,9 +18,8 @@ if (consultBooksFromTheList === "Y") {
     )
     .toLocaleUpperCase();
 
-  function category(books) {
-    return books.categoria.toLocaleUpperCase() === filterTableCategory;
-  }
+  const category = (books) =>
+    books.categoria.toLocaleUpperCase() === filterTableCategory;
   const findCategory = books.filter(category);
   console.table(findCategory);
 }
@@ -29,9 +28,7 @@ const recommendsBooks = enterInfo
   .toLocaleUpperCase();
 
 if (recommendsBooks === "Y") {
-  function recommends(books) {
-    return books.recomenda === true;
-  }
+  const recommends = (books) => books.recomenda === true;
   const findRecommends = books.filter(recommends);
   console.table(findRecommends);
 }
@@ -40,9 +37,7 @@ const wishBooks = enterInfo
   .toLocaleUpperCase();
 
 if (wishBooks === "Y") {
-  function wish(books) {
-    return books.leu === false;
-  }
+  const wish = (books) => books.leu === false;
   const findWish = books.filter(wish);
   console.table(findWish);
 } else {
