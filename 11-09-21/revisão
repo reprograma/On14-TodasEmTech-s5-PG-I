@@ -1,1 +1,19 @@
-esse é um teste
+revisão
+
+//função comum
+
+bla(blablabla){
+    return blabla
+}
+
+//ES6
+
+=> 3 * 23
+
+//função callback
+
+(23,23,callback){
+    
+}
+
+
