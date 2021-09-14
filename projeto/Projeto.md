@@ -30,11 +30,9 @@ O comportamento esperado deve ser o pedido da entrada e a impressão das tabelas
 
 ### gif de implementação
 
-<div>
 
-<img align="right" alt= "gif-projeto" src= "/home/darielly/Área de Trabalho/estudoDeProgramação/On14-TodasEmTech-s5-PG-I/projeto/imagens" >
+<img src= "/home/darielly/Área de Trabalho/estudoDeProgramação/On14-TodasEmTech-s5-PG-I/projeto/imagens" />
 
-</div>
 ---
 
 ```
