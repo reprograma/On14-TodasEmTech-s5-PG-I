@@ -27,7 +27,7 @@ function menu() {
     console.log('[1] - Listar por categoria')
     console.log('[2] - Listar livros lidos')
     console.log('[3] - Lista de desejo')
-    console.log('[4] - Liostar recomendados')
+    console.log('[4] - Listar recomendados')
     console.log('[5] - Listar todos os livros')
     console.log('[0] - Sair do menu')
     const menuSelection = menuInput.questionInt('Digite o menu que deseja visitar: ')
