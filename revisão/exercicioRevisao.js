@@ -4,10 +4,22 @@ console.log('-----------------------------------------------------')
 
 
 // String X Template string
+//var farase= "Olá mundo "
+//var frase = "Olá mundo "
+
+let frase = 'Olá Mundo '
+ // quando é  uma  variavel que eu não vou modificar 
+
+let saldo = 89.000
+ console.log(frase);
+ console.log(saldo);
 
 
 //Atribua a uma variavel templateString a farase com concatenação.
-
+const meuSaldo = `ola mundo, meu sado hoje é ${saldo}.`
+console.log(meuSaldo);
+ const meuSaldo2 = 'Olá Mundo , meu saudo hoje '+ saldo + '.'
+ console.log(meuSaldo2);
 
 // ----------------------------------------------
 console.log('Funções')
@@ -15,6 +27,31 @@ console.log('Funções')
 // FUNÇÕES
 // Possuímos as funções: falar, dobro, calcularMedia utilize o metodo function
 
+/*function falei(){
+    return 'pipipi popopo'
+} */
+console.log(falei());
+
+
+/*const falei = () =>{
+    return 'pipi popo'
+}
+console.log(falei()) */
+
+//segunda forma de  declarar função com arrow function
+// chama uma variavel e atribui a função nela .
+ const falei = () => 'pipi popo'
+
+ console.log(falei())
+  
+ function dobro (num){
+     return num * 2
+ }
+
+ console.log(dobro(89))
+ console.log(dobro(101))
+ console.log(dobro(6))
+ 
 
 
 
