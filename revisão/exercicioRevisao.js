@@ -64,8 +64,8 @@ console.log('-----------------------------------------------------')
 console.log('Callback')
 // CALLBACK
 // Possuímos as funções: somar, subtrair, multiplicar e dividir.
-/*
-function somar(a, b) {
+
+/*function somar(a, b) {
     return a + b
 }
 
@@ -87,24 +87,32 @@ function ordenar(a, b) {
     } else {
         return [b, a]
     }
-}
-*/
+}*/
+
 
 // refatore as funções na sintaxe ES6
-
+const somar = ( a,b ) => a + b
+const subtrair = (a,b) => a - b 
+const multiplicar = (a,b) => a  * b
+const dividir = (a, b) => a / b
 
 // Crie uma função chamada resultado que receberá como parâmetro: dois números e uma função de callback
-
+function resultado (a,b, callback) {
+    return callback(a,b,)
+}
 
 // Refatore a função resultado na sintaxe ES6
 
-
+const resultado = ( a,b,callback ) => callback(a, b)
 // Faça a soma de dois números usando a função resultado e chamada callback 
 
+const resultadoSoma = resultado(5,5 somar)
+console.log('o resultado da soma 5 e 5 é${resultadoSoma}')
 
 
 // Faça a subtração de dois números usando a função resultado e chamada callback 
-
+const resultadoSoma = resultado(5, 5, somar)
+console.log('o resultado da soma 5 e 5 é${resultadoSoma}')
 
 
 // Faça a multiplicação de dois números usando a função resultado e chamada callback 
