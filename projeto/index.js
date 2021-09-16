@@ -33,6 +33,9 @@ function menu() {
     const menuSelection = menuInput.questionInt('Digite o menu que deseja visitar: ')
     switch (menuSelection) {
         case 0:
+            console.log('------------------------------------')
+            console.log('            Volte Sempre!           ')
+            console.log('------------------------------------')
             break;
         case 1: 
             categorySelection()
@@ -65,8 +68,9 @@ function menu() {
 // Seleciona uma categoria conforme opções na base de dados
 function categorySelection() {
     let optionsCategory = livros.map(livro => livro.categoria)
-    console.log(optionsCategory.toString())
-    const category = menuInput.question('Digite a categoria selecionada: ')
+    let optionsFiltred = [...new Set(optionsCategory)]
+    console.log(optionsFiltred.toString())
+    const category = menuInput.question('Digite a categoria selecionada: ').toLocaleUpperCase();
     console.table(livros.filter(livros => livros.categoria == category))
 }
 
