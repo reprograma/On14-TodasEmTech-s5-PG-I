@@ -31,7 +31,7 @@ O comportamento esperado deve ser o pedido da entrada e a impressão das tabelas
 ```
 4) No README.md, conte sobre sua experiência e aprendizados com esse projeto.
 
-#### No começo eu estava um pouco insegura em como seria e como lidaria com tudo, porém ao decorrer das aulas e da didática da professora Tassi, eu me senti mais confortável em realizar o projeto, incluisive por ela ter deixado a gente mais aberta pra modificar nosso projeto como a gente se sentir mais confortável.
+   #### No começo eu estava um pouco insegura em como seria e como lidaria com tudo, porém ao decorrer das aulas e da didática da professora Tassi, eu me senti mais confortável     em realizar o projeto, incluisive por ela ter deixado a gente mais aberta pra modificar nosso projeto como a gente se sentir mais confortável.
 
 5) A entrega é poderá ser feita pelo classroom, deixando o link do seu repositorio.
 ---
