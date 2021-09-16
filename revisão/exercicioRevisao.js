@@ -106,7 +106,7 @@ function resultado (a,b, callback) {
 const resultado = ( a,b,callback ) => callback(a, b)
 // Faça a soma de dois números usando a função resultado e chamada callback 
 
-const resultadoSoma = resultado(5,5 somar)
+const resultadoSoma = resultado(5,5 soma)
 console.log('o resultado da soma 5 e 5 é${resultadoSoma}')
 
 
@@ -150,21 +150,38 @@ console.log('-----------------------------------------------------')
 console.log('Objetos  🪑')
 
 // Declaração de objetos
-
+const objeto = new objeto()
+objeto.nome = 'cadeira'
+objeto.tipo = 'madeira'
+objeto.peso = 7
+ console.log('obejeto ');
 
 
 // Fazer destructuring e acessar os valores de objeto 
-
-
-
+const nome = objeto.nome
+console.log('nome ')
+const tipo = objeto.tipo
+console.log('tipo ')
+const peso = objeto.peso
+console.log('peso ')
+ const { nome , tipo, peso } = objeto
+ console.log('nome, tipo, peso')
+ console.log('nome ')
+ console.log('tipo')
+ console.log('peso')
+  console.log('O objeto disponivel na nossa loja ${nome} do tipo ${tipo }')
 
 
 // Declare um objeto aluna com as propriedades, Nome Completo, turma e ID
-
+const aluna = {
+    nome: 'Ester ', 
+    turma :' on14',
+    id: 1404
+}
 
 //acessando o valor nome completo
 
-
+console.log('O nome  da aluna é  ${aluna.nome} ')
 
 //desestruturando alunas
 
@@ -174,8 +191,28 @@ console.log('-----------------------------------------------------')
 // CLASSES
 console.log('Classes 🆕')
 
-
+const AlunaReprograma = {
+    nomeCompleto: 'Ester ',
+    id: 1404,
+    turma: ' on14',
+    apresentacao: () => 'ola , ${alunaReprograma} -  turma ${alunaReprograma} ,  seu ide é ${alunaReprograma.id } .'
+}
 // Vamos criar a classe Alunas
+class AlunasDaREprograma {
+     constructor( name, id , classe , ){
+         this.name = name
+         this.id = indetificador 
+         this.turma = classe 
+     }
+     apresentacao(){
+         return'ola. ${this.name} - turma ${this.turma} , seu id é ${this.id} .'
+     }
+}
+
+const aluna1 = new AlunasDaREprograma('Janaina Lopes', 8963 ,'on14')
+const aluna2 = new AlunasDaREprograma('Ester Silva ', 17014 ,'on14')
+const aluna3 = new AlunasDaREprograma('Hanna' 15201 , 'on14')
+console.log(aluna1.apresentacao())
 
 
 console.log('-----------------------------------------------------')
@@ -183,17 +220,36 @@ console.log('-----------------------------------------------------')
 console.log('Arrays [ 0️⃣  , 1️⃣  , 2️⃣  ]')
 
 // Declaração de arrays
-
+const lista = new array('uva ', 'maça', 'pera' , 'batata')
+console.log(lista)
+ const numbers = [ 9, 5, 6, 2 ,4 , 3 , 10]
+ console.log(numbers)
 
 // Acessando elementos pela posição do array
+console.log(lista[1])
+console.log(lista[0])
 
+console.log('Meu numer na posição 7 é ${numbers[6]}')
 
 // Informe o tamanho de cada array
-
+console.log('O tamanho do meu  array lista é ${lita.length}')
+console.log(' o tamanho do meu  array numbers é ${numbers.length}')
 // Faça a desestruturação do array
+const [ primeiro, segundo , terceiro , quarto ] = 
+console.log(segundo)
+console.log(quarto)
 
+// adicionando item no arrays
 
-
+const novaLista = lista.push('banana')
+// posso por  em uma variavel ou não encont
+ lista.push('jaca ')
+ 
+console.log(lista)
+ //ordenação
+ lista.sort()
+ numbers.sort()
+  console.log(lista)
 console.log('-----------------------------------------------------')
 
 // MÉTODOS DE ITERAÇÃO
