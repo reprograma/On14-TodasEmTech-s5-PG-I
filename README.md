@@ -60,7 +60,8 @@ Esse projeto é um tema pedido em etapas técnicas nas seleções de algumas emp
 
  
 
-img
+
+<img src="./Img/Projeto.gif" />
 
 
 
