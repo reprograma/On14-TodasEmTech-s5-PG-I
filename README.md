@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src="Img/web-development.png" alt="Front-End Checklist" width="170">
+  <img src="Img/imgjs.jpg" alt="Front-End Checklist" width="300" height="200">
   <br>
     <br>
         Livraria
