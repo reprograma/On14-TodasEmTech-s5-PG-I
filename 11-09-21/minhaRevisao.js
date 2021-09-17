@@ -2,7 +2,7 @@ const n1 = 5;
 const n2 = 7;
 const n3 = 10;
 
-const media = calcularMedia(n1, n2, n3);
+const media = (n1 + n2 + n3) / 3;
 
 console.log(media);
 
