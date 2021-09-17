@@ -30,12 +30,11 @@ Conteúdo revisado:
 
 > Foi criado um sistema que armazena informações possivéis de gerenciar:
   - Livros que já lemos e recomendamos.
-
-  <img src="./projeto/Animação.gif" 
+<img src="./projeto/animacao.gif"/>
 
 
   ##  Espero que tenham gostado!
 
-  
+
   Se conecte comigo:
   - [Linkedin](https://www.linkedin.com/in/estefanya-alves-7b38367b/)
