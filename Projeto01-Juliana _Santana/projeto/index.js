@@ -32,7 +32,7 @@ console.log(buscarPorCategora)
 
 if (buscarPorCategora === 'S') {
 
-    console.log('Certo! Temos livros das seguinte categorias: Romance Policial, Fantasia, Biografia, Fantasia Científica, Sociedade e Tecnologia')
+    console.log('Certo! Temos livros das seguintes categorias: Romance Policial, Fantasia, Biografia, Fantasia Científica, Sociedade e Tecnologia')
 
     const qualCategoria = pegarEntrada.question('Qual categoria voce deseja?').toLocaleLowerCase()
     console.log('Essas são as opções da categoria selecionada:')
