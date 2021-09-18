@@ -1,0 +1,14 @@
+{
+  "name": "subindoatividade",
+  "version": "1.0.0",
+  "description": "Atividade da Semana 5",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeniffer Alves",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
