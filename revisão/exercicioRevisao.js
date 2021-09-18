@@ -195,7 +195,7 @@ const resultadoMedia = () => (media >= 6) ? 'aprovada' : 'reprovada'
 
 console.log(resultadoMedia()) 
 
-//volte e refatore a função ordenar
+.AlunasDaReprogramaz//volte e refatore a função ordenar
 
 console.log('-----------------------------------------------------')
 // ----------------------------------------------
