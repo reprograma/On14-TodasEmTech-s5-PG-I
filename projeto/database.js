@@ -26,14 +26,14 @@ const livros = [
     nome: 'Olhos Dágua',
     categoria: 'Literatura',
     páginas: 116,
-    recomenda: 'sim',
+    recomenda: 'não',
     leu: 'não'
   },
   {
     nome: 'Pro Git',
     categoria: 'Tecnologia',
     páginas: 5994,
-    recomenda: 'sim',
+    recomenda: 'não',
     leu: 'não'
   },
   {
