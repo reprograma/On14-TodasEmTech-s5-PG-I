@@ -2,20 +2,35 @@ console.log('--------------------------------------')
 console.log('     Projeto - Talita Rosa =)            ')
 console.log('--------------------------------------')
 
+// Função para obter os dados atualizados do database
+function obterDados() {
+    const livros = require('./database.js')
+}
 
-//vamos instanciar, o nosso banco de dados
-//Importando dados do database.js
-const livros = require('./database.js')
+function menu() {
+    console.log('Bem vindo ao catalogo de Livros de Talita Mistica (=')
+    console.log('')
+    console.log('Escolha alguma das opções abaixo, informe apenas o número da opção:')
+    console.log('')
+    console.log('1. Listar os books cadastrados')
+    console.log('2. Ordenar pelo número de páginas')
+    console.log('3. Buscar por categoria')
+    console.log('4. books recomendados')
+    console.log('5. Lista de desejos')
+    console.log('6. Encerrar')
 
-console.log('Bem vindo ao catalogo de Livros de Talita Mistica (=')
+}
+
 //Ordenando livros pelo número de páginas em ordem crescente
 livros.sort((a, b) => a.páginas - b.páginas);
 console.table(livros)
 
-//Pegando entrada de pessoas usuárias no terminal
-const pegarEntrada = require('readline-sync')
-const verLivrosPorCategoria = pegarEntrada.question('Voce deseja encontrar um livro por categoria?(S/N)?').toLocaleUpperCase()
-//const verLivrosPorCategoria = 'S'
+function obterEntrada() {
+    const pegarEntrada = require('readline-sync')
+    //Pegando entrada de pessoas usuárias no terminal
+    const entrada = pegarEntrada.question('Digite um opcao: ').toLocaleUpperCase()
+    console.log('Você escolheu a opção: ', entrada)
+}
 
 if (verLivrosPorCategoria === 'S'){
     console.log('Temos livros nas categorias de: Educação, Filosofia, História, Literatura, e Tecnologia')
@@ -31,7 +46,7 @@ if (verLivrosPorCategoria === 'S'){
     console.table(livrosEncontrados)
     
 }  else {
-    console.log('Esses são todos os livros')
+    console.log('Esses são todos os nossos livros =)')
     console.table(livros)
 }
 
