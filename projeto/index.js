@@ -1,3 +1,5 @@
+const livros = require('./database.js')
+
 console.log('--------------------------------------')
 console.log('     Projeto - Talita Rosa =)            ')
 console.log('--------------------------------------')
@@ -18,64 +20,40 @@ function menu() {
     console.log('4. books recomendados')
     console.log('5. Lista de desejos')
     console.log('6. Encerrar')
+    console.log('Obrigada por sua visita <3')
 
 }
 
-//Ordenando livros pelo número de páginas em ordem crescente
-livros.sort((a, b) => a.páginas - b.páginas);
-console.table(livros)
 
 function obterEntrada() {
     const pegarEntrada = require('readline-sync')
-    //Pegando entrada de pessoas usuárias no terminal
     const entrada = pegarEntrada.question('Digite um opcao: ').toLocaleUpperCase()
+    
     console.log('Você escolheu a opção: ', entrada)
+    return entrada
 }
 
-if (verLivrosPorCategoria === 'S'){
-    console.log('Temos livros nas categorias de: Educação, Filosofia, História, Literatura, e Tecnologia')
-    const qualCategoria = pegarEntrada.question('Qual categoria voce deseja encontrar?').toLocaleUpperCase()
-    
-    //const qualCategoria = 'História';
-    function categoria(livros) {
-        return livros.categoria.toLocaleUpperCase() === qualCategoria
-    }
+//Ordenando livros pelo número de páginas em ordem crescente
+function ordenarPorPagina(){
+    let livros = obterDados()
+    livros.sort( (a, b) => a.páginas - b.páginas )
+    console.table(livros)
+}
 
-    const livrosEncontrados = livros.filter(categoria)
+function buscarCategoria() {
+    let categoria = obterDados().filter( livros => livros.categoria === qualCategoria ) //TODO RECEBER ENTRADA CATEGORIA
     console.log('Esses são nossos títulos dessa categoria')
-    console.table(livrosEncontrados)
+    console.table(categoria)   
+}
+
+function listaRecomendados() {
+    let livrosRecomendados = obterDados().filter(livros => livros.recomenda === 'sim')
+    console.table(livrosRecomendados) 
+}
+
+
+function naoLidos() {
+    const livrosDesejados = obterDados().filter(livros => livros.leu ==='não')
+    console.table(livrosDesejados)  
+}
     
-}  else {
-    console.log('Esses são todos os nossos livros =)')
-    console.table(livros)
-}
-
-const recomendado = pegarEntrada.question('Voce quer acessar nossa lista de titulos recomendados?(S/N)?').toLocaleUpperCase()
-
-if(recomendado === 'S'){
-    function recomendaLivros(livros) {
-        return livros.recomenda === 'sim' 
-    } 
-
-    const livrosRecomendados = livros.filter(recomendaLivros)
-    console.table(livrosRecomendados)
-
-}else {
-    console.table(livros)
-}
-
-const listaDeDesejos = pegarEntrada.question('Voce quer ver os livros que desejo ler?(S/N)?').toLocaleUpperCase()
-
-if(listaDeDesejos === 'S'){
-    function naoLidos(livros) {
-       return livros.leu ==='não' 
-    }
-
-    const livrosDesejados = livros.filter(naoLidos)
-    console.table(livrosDesejados)
-
-} else {
-    console.table(livros)
-
-}
-console.log('Obrigada por sua visita <3')
