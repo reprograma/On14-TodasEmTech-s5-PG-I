@@ -73,7 +73,7 @@ const livros = [
   },
 
   {
-    name: 'Estruturas de Dados e Algoritmos com JavaScript: Escreva um Código JavaScript Complexo e Eficaz Usando a Mais Recente ECMAScript',
+    name: 'Estruturas de Dados e Algoritmos com JavaScript',
     category: 'Tecnologia',
     pages: 408,
     recommends: true,
