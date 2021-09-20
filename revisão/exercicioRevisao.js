@@ -5,22 +5,63 @@ console.log('-----------------------------------------------------')
 
 // String X Template string
 
+let nome="kamila "
+const saldo= 10000
+
+console.log(nome);
+console.log(saldo);
+
+const meuSaldo= `Olá mundo meu saldo hoje é ${saldo}.`
+console.log(meuSaldo); 
+
+const meuSaldo2= 'Olá mundo meu saldo hoje é ' + saldo + ' . ';
+
+
+const meuNome = "meu nome é: " + nome;
+const meuNome2 = `meu nome é ${nome} `;
+
+console.log(meuNome);
+console.log(meuNome2);
+
+
+
 
 //Atribua a uma variavel templateString a farase com concatenação.
 
 
+console.log('-----------------------------------------------------')
 // ----------------------------------------------
 console.log('Funções')
 
 // FUNÇÕES
 // Possuímos as funções: falar, dobro, calcularMedia utilize o metodo function
 
-
-
-
+/* function falei () {
+    return 'oi, marlon'
+}
+console.log(falei());
+*/
 // Vamos refatorar essas funções para a sintaxe de Arrow function
 
+const falei = () => 'oi, marlon'
+console.log(falei());
 
+
+function dividir(num) {
+    return num/30
+}
+console.log(dividir(1000));
+console.log(dividir(2500));
+console.log(dividir(6000));
+
+
+function calcularMedia(nota1, nota2, nota3) {
+    const soma = (nota1 + nota2 + nota3)
+    const media = soma/3
+    return media
+    
+}
+console.log(calcularMedia(5, 10, 8));
 
 //Pronto, ja refatoramos para o javascript mais moderno!
 console.log('-----------------------------------------------------')
@@ -88,13 +129,19 @@ console.log('Condicionais')
 // Uma estudante obteve as seguinte notas: n1, n2 e n3
 const n1 = 9
 const n2 = 5
-const n3 = 6
+const n3 = 7
+
 
 // Verifique se a estudante foi aprovada, utilizando a função calcularMedia. 
-
+const media = calcularMedia (n1, n2, n3)
 
 //Se a média das notas for maior ou igual a 7, a estudante passou!
 
+const resultadoMedia =  () => (media >= 7) ? 'Aprovado' : 'Reprovado'
+    
+console.log(media);
+console.log(resultadoMedia());
+    
 
 
 //volte e refatore a função ordenar
@@ -105,6 +152,18 @@ console.log('-----------------------------------------------------')
 console.log('Objetos  🪑')
 
 // Declaração de objetos
+const objeto = new Object()
+objeto.nome = 'cadeira'
+objeto.tipo = 'madeira'
+objeto.peso = '7'
+
+console.log(objeto);
+
+const {nome, tipo, peso} = objeto
+console.log(nome, tipo, peso);
+console.log(nome);
+console.log(tipo);
+console.log(peso);
 
 
 
@@ -116,6 +175,7 @@ console.log('Objetos  🪑')
 
 // Declare um objeto aluna com as propriedades, Nome Completo, turma e ID
 
+const aluna = 
 
 //acessando o valor nome completo
 

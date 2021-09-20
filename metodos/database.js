@@ -27,4 +27,4 @@ const estudantes = [
 ]
 
 //exporta o array de objetos estudantes
-module.exports = estudantes
+//module.exports = estudantes
