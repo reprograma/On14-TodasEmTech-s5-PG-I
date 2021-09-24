@@ -1,27 +1,33 @@
 <h1 align="center">
   <br>
-  <img src="Img/web-development.png" alt="Front-End Checklist" width="170">
+  <img src="Img/js.jpg" alt="Front-End Checklist" width="300" height="200">
   <br>
     <br>
-        Semana 5
+        Livraria
   <br>
 </h1>
 <h2 align="center">
-  <p align="center">{Profa} Tassi Bomfim <p>
+  <p align="center">Letícia Desiderio <p>
 </h2>
 
-# Revisão e Projeto Prático
-
+# Objetivo
+Mostrar o que aprendemos durante essas cincos semanas dentro da Reprograma, criar nosso primeiro projeto em cima daquilo que foi apresentado. Sendo assim, 
+conseguir construir uma sintaxe correta, elaborando uma boa lógica.
 
 
 
 ---
+## Liguagem & Software: 
+
+- JavaScript
+- Node.js
+
 
 ## Revisão
 
-Estamos na quinta semana, aprendemos muitas coisas novas até aqui (saudades mana Keyla), por esse motivo vamos parar e respirar - Vocês já perceberam o tanto de coisas novas que aprenderam até aqui?! Vamos rever e reforçar o conteúdo de Javascrit e ES6.
+Estamos na quinta semana, aprendemos muitas coisas novas até aqui com a Reprograma, revisamos e reforçamos o conteúdo de Javascrit e ES6.
 
-Vamos revisar:
+Revisamos:
 
 1. `Variáveis`
 2. `String X Template string`
@@ -37,11 +43,10 @@ Vamos revisar:
 
 ## Projeto
 
-Trago uma super proposta manas. 
+Criamos nosso primeiro projeto, onde foi proposto pensarmos em algo real. Algo que utilizamos muito no nosso dia a dia.
+Assim, podemos treinar e evoluir nosso conhecimento. 
 
-Vamos criar nosso primeiro projeto já pensando em algo real.  Algo que utilizamos muito no nosso dia a dia.
-
-E aqui pra nós, esse projeto é um tema pedido em etapas técnicas nas seleções de algumas empresas. 
+Esse projeto é um tema pedido em etapas técnicas nas seleções de algumas empresas. 
 
 
 > Vamos criar um sistema que armazena informações de livros para que seja possível gerenciar:
@@ -55,7 +60,8 @@ E aqui pra nós, esse projeto é um tema pedido em etapas técnicas nas seleçõ
 
  
 
-<img src="./Img/metodos.gif" />
+
+<img src="./Img/Projeto.gif" />
 
 
 
@@ -64,20 +70,12 @@ E aqui pra nós, esse projeto é um tema pedido em etapas técnicas nas seleçõ
 
 
 
-# Tenho certeza que vocês vão arrasar! 
+# Tenho certeza que apredemos muito e estamos dispostos a compartilhar nossa jornada até aqui! 
 
-## Dicas: 
-
-- Tenham calma, vocês já possuem todos os conhecimentos necessários para realizar o projeto.
-- Não queira ver o fluxo todo de imediato! Um passo de cada vez, primeiro resolve um ponto e depois passe para o passo seguinte.
-- Não existe apenas uma resposta certa.
-- Se esqueceu de algum metódo ou o que ele realmente faz? Consulte o google, veja exemplos e leia a documentação.
-- Leia o erro que está dando no seu terminal ou na propria linha de comando 
-- Juntem-se para trocar figurinhas.
 
 
 
 ##  E contem comigo! 
   Onde vocês me encontram:
-  - [Linkedin](https://www.linkedin.com/in/tassilabomfim/)
-  - [Instagram](https://www.instagram.com/tassilabomfim/)
+  - [Linkedin](https://www.linkedin.com/in/let%C3%ADcia-desiderio-65a5171b8/)
+  - [Instagram](https://www.instagram.com/letidesiderio/)

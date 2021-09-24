@@ -18,11 +18,15 @@ leu: boolean
 ```
 
 3) No arquivo index.js desenvolva sua lógica para o comportamento abaixo: 
-  - deverá ser possível buscar livros pela categoria
+
+   
+  - deverá ser possível buscar livros pela categoria 
   - Me recomenda livros pra ler? 
     Deverá listar livros que já foram lidos e que são recomendados 
-  - Minha lista de desejo:
+  - Minha lista de desejo: 
     Deverá listar livros que ainda não foram lidos 
+
+
 
 - Caso a pessoa usuária não escolha uma forma de busca, deverá mostrar todos os livros cadastrados, ordenados de forma crescente por quantidade de páginas.
 
@@ -52,3 +56,9 @@ Essas são somente sugestões de como continuar exercitando para melhorar seu pr
 
 ---
 # Tenho certeza que vocês vão arrasar! 
+
+# Minha experiência e dificuldade com este projeto:
+Dúvidas em como diminuir o condicional, a estrutura if/else, por exemplo, achei muito grande, e apesar da ultilização de cada váriavel ser diferente, não consegui pensar de forma padrão para utilizar como uma function, por exemplo. Apesar de que, não sei se seria correto ou não para este caso em específico, fica aí minha dúvida. Peço desculpas por não ter feito as perguntas exatamente iguais as que estão aqui, mas penso muito na parte de interação com o usuário. E confesso que "me recomenda livros para ler?" é pouco estranho nesse quesito, mas tentei não fugir do objetivo deste desafio.
+
+
+
