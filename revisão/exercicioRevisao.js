@@ -5,6 +5,10 @@ console.log('-----------------------------------------------------')
 
 // String X Template string
 
+let saldo = 89.000
+const meuSaldo = `Olá mundo, meu saldo hoje é ${saldo}.`
+
+
 
 //Atribua a uma variavel templateString a farase com concatenação.
 
@@ -15,11 +19,38 @@ console.log('Funções')
 // FUNÇÕES
 // Possuímos as funções: falar, dobro, calcularMedia utilize o metodo function
 
+// Primeira forma de declara função:
+// function falei() {
+//     return 'Pipipi popopo'
+    
+// }
 
+// console.log(falei());
+
+//----------------------------------------------------------- 
+
+// Segunda forma de declarar função com Arrow Function
+// Chame uma variavel e atribua NavigationPreloadManager.
+
+// const falei = () => 'Pipipi popopo'
+
+// console.log(falei());
+
+// aqui na => aqui guardamos o uma função dentro de uma variável.
+
+// function dobro (num) {
+//     return num * 2
+// }
+
+// console.log(dobro(16))
+
+// // com arrow Function 
+// const dobroSegundaVez = (num) => num * 2
+
+// console.log(`Meu Arrow Function tem o resultado ${dobroSegundaVez(15)}`);
 
 
 // Vamos refatorar essas funções para a sintaxe de Arrow function
-
 
 
 //Pronto, ja refatoramos para o javascript mais moderno!
@@ -111,17 +142,19 @@ console.log('Objetos  🪑')
 // Fazer destructuring e acessar os valores de objeto 
 
 
-
-
-
 // Declare um objeto aluna com as propriedades, Nome Completo, turma e ID
-
+const aluna = {
+    nomeCompleto: 'Raquel',
+    turma: 'On14',
+    id: 1234
+}
 
 //acessando o valor nome completo
-
-
+console.log(`O nome da aluna é ${aluna.nomeCompleto}`)
 
 //desestruturando alunas
+const {nomeCompleto, turma, id} = aluna
+console.log(`Aluna da turma ${turma}`)
 
 
 console.log('-----------------------------------------------------')
@@ -129,6 +162,12 @@ console.log('-----------------------------------------------------')
 // CLASSES
 console.log('Classes 🆕')
 
+// const alunaReprograma = {
+//     nomeCompleto: 'RAquel Andrade',
+//     id: 857496,
+//     turma: 'On14',
+//     apresentacao: () => ` Ola, ${alunaReprograma.nomeCompleto} - turma ${alunaReprograma.nomeCompleto}, seu id é ${ alunaReprograma.id}.`
+// }
 
 // Vamos criar a classe Alunas
 
@@ -139,6 +178,9 @@ console.log('Arrays [ 0️⃣  , 1️⃣  , 2️⃣  ]')
 
 // Declaração de arrays
 
+const lista = new Array('uva', 'maça', 'pera', 'batata')
+console.log(lista)
+
 
 // Acessando elementos pela posição do array
 
@@ -147,7 +189,13 @@ console.log('Arrays [ 0️⃣  , 1️⃣  , 2️⃣  ]')
 
 // Faça a desestruturação do array
 
+//adicionando item no arrays
+lista.push('banana')
+console.log(lista) 
 
+//ordenação
+lista.sort()
+console.log(lista)
 
 console.log('-----------------------------------------------------')
 
