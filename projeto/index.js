@@ -11,18 +11,26 @@ console.log(escolherPorGenero)
 
 if (escolherPorGenero == "RECOMENDA"){
     console.log('Ok, tenho os seguintes generos para recomendar: Wuxia e Literatura Fantastica.')
+    
     const escolherPorGenero = pegarEntrada.question ('Qual deles voce quer ler hoje? ').toLocaleUpperCase()
+    
     console.log('Otima escolha! Esses sao os meus queridinhos, espero que goste<3 ')
-    const genero = (livros) => livros.genero === escolherPorGenero
+
+    const genero = (livros) => {
+        return livros.genero === escolherPorGenero && livros.lido != false
+    }
+    
     const generoSelecionado = livros.filter(genero)
+    
     console.table(generoSelecionado)
 
-}else if (escolherPorGenero == 'PRETENDE LER') {
+} else if (escolherPorGenero == 'PRETENDE LER') {
     const naoLeu = (livros) => livros.lido != true
     console.table(livros.filter(naoLeu))
 
-}else {
+} else {
     livros.sort((a, b) => a.publicacao - b.publicacao)
+    
     console.log("Esses são os livros que tenho na minha biblioteca:")
     console.table(livros)
 }
